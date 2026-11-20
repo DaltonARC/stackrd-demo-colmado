@@ -5,20 +5,32 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Minimarket El Surtido | Pide desde tu casa en Santiago</title>
 <meta name="description" content="Víveres, bebidas, limpieza, carnes, frutas y vegetales con delivery en Santiago. Arma tu pedido y envíalo por WhatsApp.">
-<meta property="og:title" content="Minimarket El Surtido">
+<link rel="canonical" href="https://daltonarc.github.io/stackrd-demo-colmado/">
+<meta property="og:title" content="Minimarket El Surtido | Pide desde tu casa en Santiago">
 <meta property="og:description" content="Pide desde tu casa. Arma tu pedido y envíalo por WhatsApp.">
+<meta property="og:url" content="https://daltonarc.github.io/stackrd-demo-colmado/">
 <meta property="og:image" content="https://daltonarc.github.io/stackrd-demo-colmado/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Minimarket El Surtido, colmado con delivery en Santiago">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#e8322b">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<meta property="og:locale" content="es_DO">
+<meta property="og:site_name" content="Minimarket El Surtido">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#d42a23">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/nunito.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/baloo2.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/ecf-demo.css">
 <style>
-:root{--ecf-acento:#1fa35c;--ecf-acento-tx:#fff;--ecf-tinta:#2b1d14;--ecf-suave:#7b6f66;--ecf-borde:#f0e4d0;--ecf-radio:14px;--rojo:#e8322b;--rojo2:#c4231d;--amarillo:#ffcc1f;--verde:#1fa35c;--crema:#fff8ec;--tinta:#2b1d14;--gris:#7b6f66;--linea:#f0e4d0;--baloo:'Baloo 2',system-ui,sans-serif}
+@font-face{font-family:'Baloo 2';font-style:normal;font-weight:500 800;font-display:swap;src:url(fonts/baloo2.woff2) format('woff2')}
+@font-face{font-family:'Nunito';font-style:normal;font-weight:500 800;font-display:swap;src:url(fonts/nunito.woff2) format('woff2')}
+:root{--ecf-acento:#15803f;--ecf-acento-tx:#fff;--ecf-tinta:#2b1d14;--ecf-suave:#6b5f56;--ecf-borde:#f0e4d0;--ecf-radio:14px;--rojo:#d42a23;--rojo2:#a81c16;--amarillo:#ffcc1f;--verde:#15803f;--crema:#fff8ec;--tinta:#2b1d14;--gris:#6b5f56;--linea:#f0e4d0;--baloo:'Baloo 2',system-ui,sans-serif}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:Nunito,system-ui,sans-serif;background:var(--crema);color:var(--tinta);line-height:1.5;padding-bottom:96px}
+body{font-family:Nunito,system-ui,sans-serif;background:var(--crema);color:var(--tinta);line-height:1.5}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
 .demo{background:var(--tinta);color:#f3e6d3;font-size:12.5px;text-align:center;padding:7px 12px}
@@ -132,6 +144,29 @@ footer a{color:var(--rojo)}
 .ver-ej:active{transform:translateY(3px);box-shadow:0 2px 0 #15803f}
 .ecfs .ver-nota{margin:0 0 24px}
 .ecfs p{margin-top:16px;color:var(--gris);font-weight:700;font-size:14.5px;max-width:640px}
+.skip{position:absolute;left:12px;top:-60px;z-index:100;background:var(--tinta);color:#fff;padding:10px 16px;border-radius:10px;font-weight:800}
+.skip:focus{top:8px}
+a:focus-visible,button:focus-visible,input:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #1b5fd6;outline-offset:3px}
+.cta{display:inline-block;margin-top:20px;background:var(--amarillo);color:var(--tinta);font-family:var(--baloo);font-weight:800;font-size:20px;border-radius:16px;padding:12px 22px;box-shadow:0 5px 0 #c99a00}
+.cta:active{transform:translateY(3px);box-shadow:0 2px 0 #c99a00}
+.gal{padding:40px 0 20px}
+.gal h2,.ubic h2{font-family:var(--baloo);font-weight:800;font-size:clamp(32px,5vw,48px);line-height:1;margin-bottom:24px}
+.gal ul{list-style:none;display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal figure{background:#fff;border:2.5px solid var(--linea);border-radius:22px;overflow:hidden}
+.gal svg{display:block;width:100%;height:auto}
+.gal figcaption{padding:10px 14px 14px;font-weight:800;font-size:14px}
+.ubic{padding:30px 0 40px}
+.ubic .cols{display:grid;grid-template-columns:1fr 1.2fr;gap:16px;align-items:stretch}
+.ubic .tarj{background:#fff;border:2.5px solid var(--linea);border-radius:22px;padding:22px}
+.ubic .tarj h3{font-family:var(--baloo);font-size:22px}
+.ubic .tarj p{color:var(--gris);font-weight:700;margin:4px 0 10px}
+.ubic .tarj .wa-btn{display:inline-block;background:var(--verde);color:#fff;border-radius:14px;padding:12px 18px;font-weight:800;margin-top:6px}
+.ubic iframe{width:100%;height:100%;min-height:280px;border:2.5px solid var(--linea);border-radius:22px;background:#eee}
+.wa-float{position:fixed;right:16px;bottom:16px;z-index:25;width:58px;height:58px;border-radius:50%;background:#128c4a;display:grid;place-items:center;box-shadow:0 6px 18px rgba(0,0,0,.3);transition:bottom .35s}
+.wa-float svg{width:32px;height:32px}
+body.con-carro .wa-float{bottom:96px}
+.credito{background:var(--tinta);color:#f3e6d3;text-align:center;font-size:13px;padding:10px 16px calc(10px + 80px)}
+.credito a{color:var(--amarillo);font-weight:800;text-decoration:underline;display:inline-block;padding:8px 4px}
 .js .rv{opacity:0;transform:translateY(20px) scale(.98);transition:opacity .5s,transform .5s}
 .js .rv.in{opacity:1;transform:none}
 @media(max-width:760px){
@@ -141,7 +176,11 @@ footer a{color:var(--rojo)}
   .burbuja{transform:scale(.8)}
   .grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}
   .p .pie{flex-wrap:wrap;gap:6px}
-  .pasos,.hrs,.ecfs ul{grid-template-columns:1fr}
+  .pasos,.hrs,.ecfs ul,.ubic .cols{grid-template-columns:1fr}
+  .gal ul{grid-template-columns:1fr 1fr;gap:10px}
+  .gal figcaption{font-size:13px;padding:8px 10px 12px}
+  .ubic iframe{min-height:260px}
+  .cta{min-height:48px}
   .abierto span{display:none}
   .wrap{padding:0 20px}
   .demo{padding:8px 16px;line-height:1.45;font-size:13px}
@@ -176,7 +215,8 @@ footer a{color:var(--rojo)}
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="demo">Página de demostración hecha por StackRD · <a href="https://wa.me/18293390257?text=Hola%2C%20quiero%20una%20p%C3%A1gina%20web%20para%20mi%20negocio." target="_blank" rel="noopener">¿Quieres una así para tu negocio?</a></div>
+<a class="skip" href="#productos">Saltar a los productos</a>
+<div class="demo">Página de demostración de un negocio ficticio · <a data-wa="Hola, quiero una página web para mi negocio." href="#" target="_blank" rel="noopener">¿Quieres una así para tu negocio?</a></div>
 
 <header class="top"><div class="wrap">
   <div class="barra">
@@ -188,6 +228,7 @@ footer a{color:var(--rojo)}
       <h1>Pide desde<br>tu <span>casa</span></h1>
       <p>Víveres, bebidas, carnes y más. Arma tu pedido aquí, lo mandas por WhatsApp y te lo llevamos.</p>
       <div class="chips"><span>🛵 Delivery rápido</span><span>💵 Efectivo</span><span>🏦 Transferencia</span></div>
+      <a class="cta" href="#productos">Hacer mi pedido</a>
     </div>
     <div class="canasta rv" aria-hidden="true"><div class="burbuja">🧺</div><div class="burbuja">🍌</div><div class="burbuja">🥤</div><div class="burbuja">🥑</div><div class="burbuja">🍞</div></div>
   </div>
@@ -219,6 +260,30 @@ footer a{color:var(--rojo)}
   </div>
 </div></section>
 
+<section class="gal"><div class="wrap">
+  <h2 class="rv">Así es El Surtido</h2>
+  <ul>
+    <li><figure class="rv"><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de la fachada del minimarket con toldo rojo y blanco" focusable="false"><rect width="300" height="220" fill="#cfeaff"/><rect y="176" width="300" height="44" fill="#8c8478"/><rect x="40" y="56" width="220" height="124" fill="#fff1c9"/><rect x="30" y="40" width="240" height="24" rx="4" fill="#2b1d14"/><text x="150" y="58" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="17" fill="#ffcc1f">EL SURTIDO</text><path d="M40 70h220l-14 30H54z" fill="#d42a23"/><path d="M76 70h24l-4 30H80zM124 70h24l-2 30h-20zM172 70h24l2 30h-20zM220 70h24l6 30h-20z" fill="#fff"/><rect x="58" y="116" width="84" height="60" rx="4" fill="#9fd4ff" stroke="#2b1d14" stroke-width="4"/><rect x="170" y="112" width="64" height="68" rx="4" fill="#15803f" stroke="#2b1d14" stroke-width="4"/><circle cx="222" cy="148" r="4" fill="#ffcc1f"/><circle cx="268" cy="168" r="14" fill="#15803f"/><rect x="265" y="170" width="6" height="16" fill="#6b4a2b"/></svg><figcaption>Nuestra esquina de siempre</figcaption></figure></li>
+    <li><figure class="rv"><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de anaqueles con víveres, latas y botellas" focusable="false"><rect width="300" height="220" fill="#fff1c9"/><g fill="#a97b4f"><rect x="20" y="70" width="260" height="8"/><rect x="20" y="130" width="260" height="8"/><rect x="20" y="190" width="260" height="8"/></g><rect x="30" y="38" width="30" height="32" rx="3" fill="#d42a23"/><rect x="64" y="30" width="30" height="40" rx="3" fill="#ffcc1f"/><rect x="98" y="40" width="30" height="30" rx="3" fill="#15803f"/><rect x="140" y="26" width="18" height="44" rx="8" fill="#2f7fd6"/><rect x="162" y="26" width="18" height="44" rx="8" fill="#d42a23"/><rect x="184" y="26" width="18" height="44" rx="8" fill="#2f7fd6"/><rect x="214" y="36" width="52" height="34" rx="3" fill="#fff" stroke="#2b1d14" stroke-width="3"/><rect x="30" y="100" width="44" height="30" rx="3" fill="#fff" stroke="#2b1d14" stroke-width="3"/><rect x="80" y="94" width="44" height="36" rx="3" fill="#ffcc1f"/><circle cx="160" cy="116" r="14" fill="#d42a23"/><circle cx="192" cy="116" r="14" fill="#ffcc1f"/><circle cx="224" cy="116" r="14" fill="#15803f"/><circle cx="256" cy="116" r="14" fill="#d42a23"/><rect x="34" y="150" width="40" height="40" rx="4" fill="#2f7fd6"/><rect x="82" y="156" width="40" height="34" rx="4" fill="#d42a23"/><rect x="130" y="146" width="40" height="44" rx="4" fill="#fff" stroke="#2b1d14" stroke-width="3"/><rect x="178" y="156" width="40" height="34" rx="4" fill="#15803f"/><rect x="226" y="150" width="40" height="40" rx="4" fill="#ffcc1f"/></svg><figcaption>Víveres, bebidas y limpieza</figcaption></figure></li>
+    <li><figure class="rv"><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de cajones con frutas y vegetales frescos" focusable="false"><rect width="300" height="220" fill="#e9f8d9"/><rect x="20" y="120" width="260" height="70" rx="6" fill="#a97b4f"/><rect x="20" y="120" width="260" height="10" fill="#8a6038"/><g fill="#ff9d1f"><circle cx="50" cy="112" r="16"/><circle cx="82" cy="108" r="16"/><circle cx="66" cy="90" r="16"/></g><g fill="#2c7a3b"><ellipse cx="130" cy="108" rx="14" ry="19"/><ellipse cx="160" cy="108" rx="14" ry="19"/><ellipse cx="145" cy="88" rx="14" ry="19"/></g><g fill="#d42a23"><circle cx="205" cy="110" r="15"/><circle cx="235" cy="108" r="15"/><circle cx="220" cy="90" r="15"/></g><path d="M40 160c20 14 50 14 70 0" fill="none" stroke="#ffcc1f" stroke-width="10" stroke-linecap="round"/><path d="M130 160c20 14 50 14 70 0" fill="none" stroke="#ffcc1f" stroke-width="10" stroke-linecap="round"/><circle cx="245" cy="160" r="14" fill="#fff1c9"/><circle cx="245" cy="160" r="6" fill="#ffcc1f"/></svg><figcaption>Frutas y vegetales del día</figcaption></figure></li>
+    <li><figure class="rv"><svg viewBox="0 0 300 220" role="img" aria-label="Ilustración de una moto de delivery con caja de pedidos" focusable="false"><rect width="300" height="220" fill="#ffe2df"/><rect y="170" width="300" height="50" fill="#6e6a64"/><path d="M0 195h300" stroke="#fff" stroke-width="4" stroke-dasharray="26 18"/><circle cx="80" cy="160" r="26" fill="#2b1d14"/><circle cx="80" cy="160" r="10" fill="#cfcfcf"/><circle cx="214" cy="160" r="26" fill="#2b1d14"/><circle cx="214" cy="160" r="10" fill="#cfcfcf"/><path d="M80 160l40-50h60l34 50M150 110l-14-26h-22" fill="none" stroke="#d42a23" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><rect x="40" y="62" width="76" height="54" rx="6" fill="#ffcc1f" stroke="#2b1d14" stroke-width="4"/><text x="78" y="96" text-anchor="middle" font-family="Baloo 2,sans-serif" font-weight="800" font-size="18" fill="#2b1d14">PEDIDO</text><circle cx="184" cy="78" r="14" fill="#8a5a3a"/><path d="M170 96h28l8 34h-40z" fill="#15803f"/></svg><figcaption>Delivery a tu puerta</figcaption></figure></li>
+  </ul>
+</div></section>
+
+<section class="ubic" id="ubicacion"><div class="wrap">
+  <h2 class="rv">Dónde estamos</h2>
+  <div class="cols">
+    <div class="tarj rv">
+      <h3>📍 Dirección</h3>
+      <p>Av. Juan Pablo Duarte, Santiago de los Caballeros, República Dominicana</p>
+      <h3>📲 Contacto</h3>
+      <p>Pedidos y preguntas por WhatsApp.</p>
+      <a class="wa-btn" data-wa="Hola, tengo una pregunta sobre los productos y el delivery." href="#" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+    </div>
+    <iframe class="rv" title="Mapa de Santiago de los Caballeros" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Av.%20Juan%20Pablo%20Duarte%2C%20Santiago%20de%20los%20Caballeros&amp;output=embed"></iframe>
+  </div>
+</div></section>
+
 <section class="ecfs" id="factura"><div class="wrap">
   <h2 class="rv">Factura electrónica incluida</h2>
   <button type="button" class="ver-ej" id="verej">Ver factura de ejemplo</button>
@@ -231,7 +296,10 @@ footer a{color:var(--rojo)}
   <p>En esta demostración la factura no se envía a la DGII. En tu negocio se conecta al Facturador Gratuito o a un proveedor certificado.</p>
 </div></section>
 
-<footer>© Minimarket El Surtido · Santiago de los Caballeros<br>Página hecha por <a href="https://wa.me/18293390257?text=Hola%2C%20vi%20una%20p%C3%A1gina%20hecha%20por%20StackRD%20y%20quiero%20una." target="_blank" rel="noopener">StackRD</a></footer>
+<footer>© Minimarket El Surtido · Santiago de los Caballeros · Negocio ficticio</footer>
+<div class="credito">Demo creada por <a href="https://daltonarc.github.io/stackrd-web/" target="_blank" rel="noopener">StackRD</a></div>
+
+<a class="wa-float" data-wa="Hola, quiero información." href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg viewBox="0 0 32 32" aria-hidden="true"><path fill="#fff" d="M16 3C9 3 3.4 8.6 3.4 15.5c0 2.3.6 4.4 1.7 6.3L3 29l7.4-1.9c1.8 1 3.8 1.500 5.600 1.500 7 0 12.600-5.600 12.600-12.500S23 3 16 3zm0 22.800c-1.800 0-3.500-.5-5-1.400l-.4-.2-4.400 1.100 1.200-4.300-.3-.4a10 10 0 0 1-1.500-5.400C5.600 9.900 10.300 5.300 16 5.300s10.400 4.600 10.400 10.200S21.700 25.800 16 25.800zm5.700-7.500c-.3-.2-1.800-.9-2.100-1-.3-.1-.5-.2-.7.200s-.8 1-1 1.200c-.2.200-.4.200-.7.100-1.900-.9-3.100-1.700-4.300-3.700-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.100-.8.400-.3.300-1.100 1.100-1.100 2.600s1.100 3 1.300 3.200c.2.200 2.200 3.400 5.400 4.700 2 .8 2.800.9 3.800.7.600-.1 1.800-.7 2.100-1.500.3-.7.300-1.300.2-1.500-.1-.2-.3-.3-.6-.4z"/></svg></a>
 
 <div class="carro" id="carro"><div class="in"><span class="n" id="n">0</span><span class="t"><small>Tu pedido</small><span id="tt">RD$0</span></span><button class="go" id="ver">Ver pedido →</button></div></div>
 <div class="velo" id="velo"></div>
@@ -250,10 +318,13 @@ footer a{color:var(--rojo)}
   <p class="nota" id="nota">Escribe tu nombre y dirección para enviar.</p>
 </div></div>
 
+<script src="config.js"></script>
 <script src="assets/vendor/qrcode.js"></script>
 <script src="assets/ecf-demo.js"></script>
 <script>
-const WA='18293390257',wa=m=>'https://wa.me/'+WA+'?text='+encodeURIComponent(m),fmt=n=>'RD$'+n.toLocaleString('en-US');
+const PRE=DEMO.prefijo,wa=m=>'https://wa.me/'+DEMO.whatsapp+'?text='+encodeURIComponent(PRE+' '+m),fmt=n=>'RD$'+n.toLocaleString('en-US');
+document.querySelectorAll('[data-wa]').forEach(a=>a.href=wa(a.dataset.wa));
+const LS='stackrd-demo-colmado:v1';
 const CATS=[['todo','🧺','Todo'],['viveres','🍚','Víveres'],['bebidas','🥤','Bebidas'],['limpieza','🧼','Limpieza'],['carnes','🥩','Carnes'],['frutas','🥑','Frutas y vegetales']];
 const BG={viveres:'#fff1c9',bebidas:'#dff1ff',limpieza:'#e7f6ee',carnes:'#ffe2df',frutas:'#e9f8d9'};
 const P=[
@@ -266,6 +337,12 @@ const P=[
  ['Aguacates','2 unidades','frutas','🥑',110],['Tomates','1 lb','frutas','🍅',70],['Cebollas','1 lb','frutas','🧅',60],['Limones','6 unidades','frutas','🍋',50]
 ].map((x,i)=>({i,n:x[0],u:x[1],c:x[2],e:x[3],p:x[4]}));
 const Q={};let cat='todo',pago='Efectivo';
+function guarda(){try{localStorage.setItem(LS,JSON.stringify({Q,pago,nom:document.getElementById('nom').value,dir:document.getElementById('dir').value}))}catch(e){}}
+(function(){try{const s=JSON.parse(localStorage.getItem(LS)||'null');if(!s)return;
+ Object.keys(s.Q||{}).forEach(i=>{const q=+s.Q[i];if(P[i]&&q>0&&q<100)Q[i]=q});
+ if(s.pago==='Transferencia')pago='Transferencia';
+ document.getElementById('nom').value=String(s.nom||'').slice(0,80);document.getElementById('dir').value=String(s.dir||'').slice(0,200);
+ document.querySelectorAll('#pagos button').forEach(b=>b.classList.toggle('on',b.textContent.indexOf(pago)>-1))}catch(e){}})();
 const G=document.getElementById('grid'),C=document.getElementById('cats');
 C.innerHTML=CATS.map(c=>`<button data-c="${c[0]}" class="${c[0]===cat?'on':''}"><span>${c[1]}</span>${c[2]}</button>`).join('');
 C.onclick=e=>{const b=e.target.closest('button');if(!b)return;cat=b.dataset.c;C.querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));pinta()};
@@ -290,7 +367,7 @@ const ECF=EcfDemo.mount(document.getElementById('ecf'),Object.assign({},ECF_OPTS
  getOrder:()=>{const it=items(),nom=document.getElementById('nom').value.trim(),dir=document.getElementById('dir').value.trim();
   return it.length&&nom&&dir?{lines:it.map(({x,q})=>({desc:x.n+' ('+x.u+')',qty:q,price:x.p,gravado:!EXENTO.test(x.n)})),cliente:{nombre:nom,direccion:dir}}:null}}));
 function resumen(){const it=items(),n=it.reduce((a,b)=>a+b.q,0),t=it.reduce((a,b)=>a+b.q*b.x.p,0);
- document.getElementById('n').textContent=n;document.getElementById('tt').textContent=fmt(t);document.getElementById('carro').classList.toggle('on',n>0);
+ document.getElementById('n').textContent=n;document.getElementById('tt').textContent=fmt(t);document.getElementById('carro').classList.toggle('on',n>0);document.body.classList.toggle('con-carro',n>0);guarda();
  if(!n&&hoja.classList.contains('on'))abre(false);hojaPinta()}
 const hoja=document.getElementById('hoja'),velo=document.getElementById('velo');
 function abre(v){hoja.classList.toggle('on',v);velo.classList.toggle('on',v);if(v)hojaPinta()}
@@ -304,6 +381,7 @@ function hojaPinta(){const it=items(),t=it.reduce((a,b)=>a+b.q*b.x.p,0);
  const nom=document.getElementById('nom').value.trim(),dir=document.getElementById('dir').value.trim(),ok=it.length&&nom&&dir;
  const b=document.getElementById('enviar');b.setAttribute('aria-disabled',ok?'false':'true');
  ECF.refresh();document.getElementById('nota').textContent=ok?'Te confirmamos el pedido y el costo del delivery por WhatsApp.':'Escribe tu nombre y dirección para enviar.';
+ guarda();
  b.href=wa(`Hola, vi la demo de El Surtido y quiero hacer este pedido:\n${it.map(({x,q})=>`• ${q} x ${x.n} (${x.u}) – ${fmt(x.p*q)}`).join('\n')}\nTotal: ${fmt(t)}\nNombre: ${nom}\nDirección: ${dir}\nPago: ${pago}`)}
 (function(){const n=new Date(),d=n.getDay(),h=n.getHours();const ab=d===0?(h>=8&&h<14):(h>=7&&h<22);const el=document.getElementById('abierto');
  el.querySelector('span').textContent=ab?(d===0?'Abierto hasta las 2:00 p.m.':'Abierto hasta las 10:00 p.m.'):'Cerrado ahora · recibimos pedidos';if(!ab)el.querySelector('i').style.background='#ffd27d'})();
